@@ -1,5 +1,8 @@
 <script>
-	let name = "Brad";
+	let firstName = "Brad";
+	let lastName = "Jones";
+
+	$: name = firstName + " " + lastName;
 </script>
 
 <main>
