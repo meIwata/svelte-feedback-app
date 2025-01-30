@@ -1,6 +1,9 @@
 <script>
     import Card from "./Card.svelte";
-    let text=""
+    import Button from "./Button.svelte";
+    
+    let text = ""
+    let btnDisabled = false
 </script>
 <Card>
     <header>
@@ -10,7 +13,7 @@
         <!-- Rating Select -->
         <div class="input-group">
             <input type="text" placeholder="Tell us something that keeps you coming back">
-        <button>Send</button> 
+        <Button disabled={btnDisabled} type="submit">Send</Button> 
         </div>
     </form>
 </Card>
