@@ -8,5 +8,5 @@
 
 {#each feedback as fb (fb.id)}
     <!-- <h3>{fb.text}</h3>     -->
-    <FeedbackItem item={fb} />
+    <FeedbackItem item={fb} on:delete-feedback />
 {/each}
