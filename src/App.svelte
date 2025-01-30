@@ -19,7 +19,9 @@
     ]
 
     const deleteFeedback = (e) => {
-        console.log(e.detail)
+        // console.log(e.detail)
+        const itemId = e.detail
+        feedback = feedback.filter((item) => item.id != itemId)
     }
 </script>
 
